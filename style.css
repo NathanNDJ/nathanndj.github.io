@@ -1,0 +1,76 @@
+/*cascading stylesheet*/
+*{
+  margin: 0;
+}
+
+html,body{ 
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing:antialiased;
+  --black:hsl(240, 6%, 13%);
+  --gray:hsl(240, 9%, 89%);
+
+}
+body{
+  display: grid;
+  place-items: center;
+
+}
+main{
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+.conteiner{
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--gray)
+}
+
+.avatar{
+  width: 10rem;
+  margin:11.5rem auto 0;
+  position:relative;
+}
+
+.avatar span{
+  position:absolute;
+  top:-15px;
+  z-index: 1;
+}
+
+.avatar > img{
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(0 25%, 51% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+h1{
+  font-size:1.5rem;
+  margin-top:1.5rem;
+}
+a {
+color: var(--gray);
+text-decoration: none;
+margin-top: 0.25rem;
+display: flex; /*para conseguir alterar os itens na linha <a>*/
+gap: 0.75rem; /*para distanciar os itens do git com o nome*/
+justify-content: center; /*para alinhar os itens no eixo X*/
+align-items: center; /*para garantir o alinhamento da pagina*/
+}
+
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex; /*para ficar um do lado do outro do eixo X*/
+  gap: 0.5rem; /*para dar espaçamento entre as caixas*/
+  justify-content: center; /*centralizar os elementos ao meio*/
+} 
